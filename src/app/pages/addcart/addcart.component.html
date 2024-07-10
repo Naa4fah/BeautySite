@@ -1,0 +1,68 @@
+<div style="background-color: pink;">
+
+<div class="navbar">
+    <div class="logo">
+        <a href="#" class="logo"><b style="color:orangered">Enhante</b><i style="color:blueviolet">Beauty</i></a>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a style="color:blueviolet" href="#home">Home</a></li>
+        <li><a style="color:blueviolet" routerLink="product">Products</a></li>
+        <li><a style="color:blueviolet" routerLink="account">Account</a></li>
+      </ul>
+    </nav>
+    <a ><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" style="color:blueviolet" /></a>
+  </div>
+
+
+
+
+
+<div  class="card-wrapper">
+    <div class="product-wrapper">
+       
+       <img src='{{data.image}}' alt="" class="product-image" height="450pz">
+ </div>
+
+   <div class="product-info">
+
+
+       <h1 class="title-first">{{data.title}}</h1>
+       <h2 class="title-second">{{data.description}}</h2>
+
+
+       <div class="features-title">Features</div>
+
+       <ul class="features-list">
+           <li>Pigmentation: Lipsticks typically have intense pigmentation, providing rich and vibrant color payoff with just one swipe.</li>
+           <li>Ingredients: Modern lipsticks may include beneficial ingredients like antioxidants, vitamins, and SPF for added protection and nourishment.</li>
+           <li>Moisturizing Formulas: Some lipsticks contain moisturizing ingredients like oils and butters, which help keep lips hydrated and prevent dryness.</li>
+           <li>FLongevity: Many lipsticks are designed to be long-wearing, offering hours of color without frequent reapplication.</li>
+           
+       </ul>
+
+       <div class="product-links">
+           <a href="#" class="link-item">In Stock</a>
+           <a href="#" class="link-item">Free Shipping </a>
+           <a href="#" class="link-item">Reviews</a>
+       </div>
+       <div class="quantity">Quantity</div>
+       <div class="quntity-buttons">
+           <button id="minus" class="quantity-item">-</button>
+           <div id="quantity-item" class="quantity-item">1</div>
+           <button id="plus" class="quantity-item">+</button>
+       </div>
+
+       <div class="price-wrapper">
+           <div id="fixed-price" class="actual-price" data-price="599">{{data.price}}</div>
+           <div class="old-price">Old Price: $900</div>
+       </div>
+
+       <div class="buttons-wrapper">
+           <button id="addCart" class="button-item">Add to Wish list</button>
+           <button class="button-item">BUY NOW</button>
+       </div>
+   </div>
+</div>
+
+</div>
